@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+	<head>
+		<title>Sketchpad</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="animations.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<p id="pageTitle">Project Odin Sketch Pad<br> Javascript/jQuery</p>
+			<p style="margin: 0 0 20px 0">Project is based on <a href="">these</a>guidelines.</p>
+			<div class="border">
+				<input onclick="checkUncheck()"type="checkbox" id="borderBox">Include Border (on/off)</input>
+				<input onclick="leaveTrail()"type="checkbox"id="trailBox">Leave Trail (on/off)</input>
+				<input onclick="opacityMode()"type="checkbox"id="opacitylBox">Opacity (on/off)</input>
+				<button onclick="resetBoard()"id="resetButton">Reset board</button>
+			</div>
+		</div>
+		<div class="container"></div>
+	</body>
+</html>
