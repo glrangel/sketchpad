@@ -7,12 +7,19 @@
 	</head>
 	<body>
 		<div class="header">
-			<p id="pageTitle">Project Odin Sketch Pad<br> Javascript/jQuery</p>
-			<p style="margin: 0 0 20px 0">Project is based on <a href="">these</a>guidelines.</p>
+			<div class="pageText">
+				<p id="pageTitle">Project Odin Sketch Pad<br> Javascript/jQuery</p>
+				<p style="margin: 0 0 20px 0">Project
+					<a href="http://www.theodinproject.com/web-development-101/javascript-and-jquery">
+						details</a> - by 
+					<a href="https://github.com/glrangel">Gabriel Rangel</a>
+				</p>
+			</div>
 			<div class="border">
 				<input onclick="checkUncheck()"type="checkbox" id="borderBox">Include Border (on/off)</input>
 				<input onclick="leaveTrail()"type="checkbox"id="trailBox">Leave Trail (on/off)</input>
-				<input onclick="opacityMode()"type="checkbox"id="opacitylBox">Opacity (on/off)</input>
+				<input onclick="resetClasses()"type="checkbox"id="colorBox">Random Colors (on/off)</input>
+				<input onclick="opacityMode()"type="checkbox"id="opacityBox">Opacity (on/off)</input>
 				<button onclick="resetBoard()"id="resetButton">Reset board</button>
 			</div>
 		</div>
