@@ -11,8 +11,8 @@ function onPageLoad(){
 	$colorBox = $("#colorBox");
 	$opacityBox = $("#opacityBox");
 	hasBorder = 0; //default no border
-	numSquares = prompt("Enter size of grid or leave empty for a 10x10 grid.");
-	if(numSquares == "")
+	numSquares = prompt("Enter size of grid (less than or equal to 60) or leave empty for a 10x10 grid.");
+	if(numSquares == "" || numSquares > "60")
 		numSquares = 10; // default value
 	squareSize = 500/numSquares;
 	//Create Grid
